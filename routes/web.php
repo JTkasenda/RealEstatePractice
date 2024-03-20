@@ -34,7 +34,7 @@ require __DIR__.'/auth.php';
 Route::middleware(['auth', 'role:admin'])->group(function(){
 
     Route::get("/admin/dashboard", [AdminController::class, 'AdminDashboard'])->name("admin.dashboard");
-
+    Route::get("/admin/dashboard/email/inbox", [AdminController::class, 'AdminDashboardInbox'])->name("admin.dashboard.inbox");
 });
 
 Route::middleware(['auth', 'role:agent'])->group(function(){
