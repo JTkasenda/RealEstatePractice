@@ -16,4 +16,9 @@ class AdminController extends Controller
     {
         return view("admin.inbox");
     }
+
+    public function AdminProfile(){
+
+        return view("admin.profile");
+    }
 }
