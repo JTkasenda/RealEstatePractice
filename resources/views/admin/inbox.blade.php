@@ -1,6 +1,5 @@
 @extends('admin.dashboard')
-@section('admin')
-<div class="page-content">        
+@section('admin')      
     <div class="row inbox-wrapper">
       <div class="col-lg-12">
         <div class="card">
@@ -344,6 +343,4 @@
         </div>
       </div>
     </div>
-
-        </div>
 @endsection
